@@ -14,6 +14,7 @@ Use sort helpers within an Array.sort() function. For example:
 
 ```
 $scope.records = $scope.records.sort(ObjectSort.compare('string','n', $scope.reverse));
+
 ```
 
 Arg 1: 'string' or 'numeric' if the property you are sorting by is of that type. 
@@ -24,7 +25,8 @@ Arg 3: Boolean if sort should be reversed.
 
 As an example with a function: 
 
-```$scope.records = $scope.records.sort(ObjectSort.compare('numeric',
+```
+$scope.records = $scope.records.sort(ObjectSort.compare('numeric',
                     function(record) {
                         if (record.d == 0 && record.c ) { 
                             return record.c;
@@ -32,4 +34,5 @@ As an example with a function:
                             return NaN 
                         }
                     }, 
-                $scope.reverse));```
+                $scope.reverse));
+```
