@@ -6,9 +6,11 @@ Install:
 
 * Clone repo in your JS file or use a JavaScript dependency manager such as bower. 
 * Include script below angular js and above your app initialization file.
-	e.g. <script src="js/angular-objectsort/objectsort.js"></script>
+	
+	```<script src="js/angular-objectsort/objectsort.js"></script>```
+
 * Add ObjectSort to your app's dependencies.
-	e.g. var app = angular.module('MySearch', ['ngSanitize','ObjectSort']);
+	```var app = angular.module('MySearch', ['ngSanitize','ObjectSort']);```
 
 Use sort helpers within an Array.sort() function. For example:
 
